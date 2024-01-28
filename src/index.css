@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Noto+Color+Emoji&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -8,6 +10,148 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', */
+
+  /* monospace; */
+  font-family: 'Chakra-Petch', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#ece9e6, #ffffff);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  background: linear-gradient(#232526, #414345);
+  padding: 60px 80px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 9px;
+  color: #fff;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+  position: relative;
+}
+
+h1 span {
+  font-family: 'Noto Color Emoji', sans-serif;
+}
+
+.email-validator-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.email-validator-box label {
+  font-size: 15px;
+  color: #eee;
+  font-weight: 300;
+  font-style: italic;
+}
+
+input[type='email'] {
+  padding: 5px 10px;
+  height: 30px;
+  width: 230px;
+  border-radius: 6px;
+}
+
+input[type='email']:focus {
+  outline: none;
+  border-bottom: 3px solid red;
+}
+
+input[type='email']:focus.correct {
+  border-bottom-color: green;
+}
+
+.email-validator-box p {
+  background-color: green;
+  color: #fff;
+  padding: 10px;
+  width: 230px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 6px;
+}
+
+@media only screen and (max-width: 30em) {
+  body {
+    padding: 10px;
+  }
+
+  .app {
+    background: linear-gradient(#232526, #414345);
+    padding: 20px 10px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    position: relative;
+  }
+
+  h1 span {
+    font-family: 'Noto Color Emoji', sans-serif;
+  }
+
+  .email-validator-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .email-validator-box label {
+    font-size: 15px;
+    color: #eee;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  input[type='email'] {
+    padding: 5px 10px;
+    height: 30px;
+    width: 80%;
+    border-radius: 6px;
+  }
+
+  input[type='email']:focus {
+    outline: none;
+    border-bottom: 3px solid red;
+  }
+
+  input[type='email']:focus.correct {
+    border-bottom-color: green;
+  }
+
+  .email-validator-box p {
+    background-color: green;
+    color: #fff;
+    padding: 10px;
+    width: 75%;
+  }
 }
